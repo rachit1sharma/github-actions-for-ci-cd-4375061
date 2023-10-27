@@ -28,11 +28,11 @@ jobs:
         cache: 'npm'
     - name: Install Dependencies
       run: npm ci
-      working-directory: github-actions-for-ci-cd-4375061/Ch02/02_03_ci_for_javascript
+      working-directory: Ch02/02_03_ci_for_javascript
     - name: Build
       run: npm run build --if-present
-      working-directory: github-actions-for-ci-cd-4375061/Ch02/02_03_ci_for_javascript
+      working-directory: Ch02/02_03_ci_for_javascript
     - name: Test
       run: npm test
-      working-directory: github-actions-for-ci-cd-4375061/Ch02/02_03_ci_for_javascript
+      working-directory: Ch02/02_03_ci_for_javascript
 
