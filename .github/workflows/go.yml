@@ -26,13 +26,11 @@ jobs:
 
     - name: List contents of the directory
       run: ls -R
-    - name: Build
+      
+    - name: Build and Test
+      working-directory: Ch02/02_05_ci_for_go
       run: |
-        cd github-actions-for-ci-cd-4375061/Ch02/02_05_ci_for_go
-        go build -v ./...
-
-    - name: Test
-      run: |
-        cd github-actions-for-ci-cd-4375061/Ch02/02_05_ci_for_go
-        go test -v ./...
+          ls # Check the contents of the directory
+          go build -v ./...
+          go test -v ./...
        
