@@ -28,11 +28,11 @@ jobs:
       run: ls -R
     - name: Build
       run: |
-        cd Ch02/02_03_ci_for_go
+        cd ./Ch02/02_03_ci_for_go
         go build -v ./...
 
     - name: Test
       run: |
-        cd Ch02/02_03_ci_for_go
+        cd ./Ch02/02_03_ci_for_go
         go test -v ./...
        
