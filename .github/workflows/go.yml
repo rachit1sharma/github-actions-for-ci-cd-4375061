@@ -20,7 +20,12 @@ jobs:
       uses: actions/setup-go@v4
       with:
         go-version: '1.20'
+        
+    - name: Display current working directory
+      run: pwd
 
+    - name: List contents of the directory
+      run: ls -R
     - name: Build
       run: |
         cd Ch02/02_03_ci_for_go
